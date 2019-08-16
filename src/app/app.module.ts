@@ -23,10 +23,6 @@ import {NotFoundComponent} from './not-found/not-found.component';
       },{
         path:'list',
         component:ListComponent
-      },
-      {
-        path:'**',
-        component:NotFoundComponent
       }
     ])
   ],
