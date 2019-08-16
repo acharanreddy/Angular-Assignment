@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
-import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { AddComponent } from './add/add.component';
@@ -16,7 +15,6 @@ import {NotFoundComponent} from './not-found/not-found.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     FormsModule,
     RouterModule.forRoot([
       {
@@ -24,14 +22,13 @@ import {NotFoundComponent} from './not-found/not-found.component';
         component:AddComponent
       },{
         path:'list',
-        component:ListComponent;
+        component:ListComponent
       },
       {
         path:'**',
         component:NotFoundComponent
       }
     ])
-  ],
   ],
   providers: [],
   bootstrap: [AppComponent]
